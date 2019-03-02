@@ -1,0 +1,45 @@
+$text-color: #eee;
+$link-color-visited: #ccc;
+
+@import "_normalize";
+//@import "fontawesome/fontawesome.scss";
+//@import "fontawesome/brands.scss";
+@import "fontello/fontello";
+@import "_nav";
+
+html {
+  background-color: #1b1f23;
+  color: $text-color;
+}
+body {
+  font: {
+    family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+      Segoe UI Symbol;
+    size: 12pt;
+  }
+
+  #content {
+    margin: auto;
+    max-width: 980px + 40px;
+    padding: 0 20px;
+
+    a {
+      &:link {
+        color: inherit;
+      }
+      &:visited {
+        color: $link-color-visited;
+      }
+    }
+  }
+}
+
+ul.flatlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.permhide {
+  display: none;
+}

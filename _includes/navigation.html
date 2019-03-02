@@ -1,0 +1,16 @@
+<nav>
+    <ul class="left">
+        {% for item in site.data.navigation %}
+        <a href="{{ item.link }}">
+            <li {% if page.url == item.link %}class="current" {% endif %}>
+                {{ item.name }}
+            </li>
+        </a>
+        {% endfor %}
+    </ul>
+    <ul class="right">
+        <!--<a href="https://github.com/nithanim/"><li><i class="icon fab fa-github fa-fw"></i></li></a>-->
+        <a href="https://aemail.com/&#082;&#065;&#076;"><li><i class="icon icon-mail email"></i></li></a>
+        <a href="https://github.com/nithanim/"><li><i class="icon icon-github-circled"></i></li></a>
+    </ul>
+</nav>
